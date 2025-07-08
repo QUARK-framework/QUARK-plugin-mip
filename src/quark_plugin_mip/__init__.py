@@ -1,6 +1,7 @@
 from quark.plugin_manager import factory
 
-from quark_plugin_mip.example_module import ExampleModule
+from quark_plugin_mip.classical_mip_solver import ClassicalMipSolver
+
 
 def register() -> None:
     """
@@ -10,4 +11,4 @@ def register() -> None:
 
     The "module_name" will later be used to refer to the module in the configuration file.
     """
-    factory.register("example_module", ExampleModule)
+    factory.register("classical_mip_solver", ClassicalMipSolver)
